@@ -1,9 +1,18 @@
 Algoritmo Calculadora
-	Definir op, nop Como Entero
+	Definir op, nop cuyp Como Real
+ Definir user, pass Como Caracter
 	Definir v1, v2, s, r, m, d Como Real
 	nop = 0
+ cuyp = 0
+ Mientras cuyp < 3 Hacer
+ Si user == "Admin"
+ Escribir "Coloque su usuario",user
+ cuyp = cuyp + 4
+ SiNo
+ Escribir "Coloque el usuario correcto"
+ cuyp = cuyp + 1
 	Mientras nop < 4 Hacer
-	Escribir "Eliga la operaci髇 que desea realizar. 1) Suma. 2) Resta. 3) Multiplicaci髇. 4)Divisi髇."
+	Escribir "Eliga la operaci贸n que desea realizar. 1) Suma. 2) Resta. 3) Multiplicaci贸n. 4)Divisi贸n."
 	Leer op
 	Escribir "Coloque el primer valor: "
 	Leer v1
@@ -21,13 +30,13 @@ Algoritmo Calculadora
 	3:
 		m = v1 * v2
 		nop = nop + 1
-		Escribir "El total de la multiplicaci髇 es de: ",m
+		Escribir "El total de la multiplicaci贸n es de: ",m
 	4:
 		d = v1 / v2
 		nop = nop + 1
-		Escribir "El total de la divisi髇 es de: ",d
+		Escribir "El total de la divisi贸n es de: ",d
 	De Otro Modo:
-		Escribir "No existe la opci髇, coloque una opci髇 entre 1 - 4 :)"
+		Escribir "No existe la opci贸n, coloque una opci贸n entre 1 - 4 :)"
 Fin Segun
 Fin Mientras
 FinAlgoritmo
